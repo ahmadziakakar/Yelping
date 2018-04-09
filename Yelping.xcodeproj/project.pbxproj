@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1256B11E20775196001E13B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256B11D20775196001E13B2 /* AppDelegate.swift */; };
+		1256B12320775196001E13B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1256B12120775196001E13B2 /* Main.storyboard */; };
+		1256B12620775196001E13B2 /* Yelping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1256B12420775196001E13B2 /* Yelping.xcdatamodeld */; };
+		1256B12820775198001E13B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1256B12720775198001E13B2 /* Assets.xcassets */; };
+		1256B12B20775198001E13B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1256B12920775198001E13B2 /* LaunchScreen.storyboard */; };
+		932585B355E08D812D41CC68 /* Pods_Yelping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C990C55EE61F83F1E2D1B3 /* Pods_Yelping.framework */; };
+		E327BDB4207753FE00FA46EE /* AKSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDB3207753FE00FA46EE /* AKSearchViewController.swift */; };
+		E327BDBD2078336E00FA46EE /* AKBusinessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDBC2078336E00FA46EE /* AKBusinessCollectionViewCell.swift */; };
+		E327BDC92078533B00FA46EE /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDC82078533B00FA46EE /* Business.swift */; };
+		E327BDD02078B94400FA46EE /* AKAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDCE2078B94400FA46EE /* AKAPIManager.swift */; };
+		E327BDD12078B94400FA46EE /* AKDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDCF2078B94400FA46EE /* AKDataManager.swift */; };
+		E327BDD32078BFE200FA46EE /* AKSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDD22078BFE200FA46EE /* AKSearchViewModel.swift */; };
+		E327BDE020795CA400FA46EE /* AKBusinessCVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDDF20795CA400FA46EE /* AKBusinessCVCConfigurator.swift */; };
+		E327BDE22079A09500FA46EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDE12079A09500FA46EE /* Extensions.swift */; };
+		E327BDE62079D4F100FA46EE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDE52079D4F100FA46EE /* Reachability.swift */; };
+		E327BDE92079D89E00FA46EE /* AKDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDE82079D89E00FA46EE /* AKDataStorage.swift */; };
+		E327BDEB2079FC7000FA46EE /* AKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327BDEA2079FC7000FA46EE /* AKWebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1256B11A20775196001E13B2 /* Yelping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1256B11D20775196001E13B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1256B12220775196001E13B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1256B12520775196001E13B2 /* Yelping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yelping.xcdatamodel; sourceTree = "<group>"; };
+		1256B12720775198001E13B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1256B12A20775198001E13B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1256B12C20775198001E13B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C990C55EE61F83F1E2D1B3 /* Pods_Yelping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yelping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA486B2381161A56EF86A47E /* Pods-Yelping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelping/Pods-Yelping.release.xcconfig"; sourceTree = "<group>"; };
+		DABDF379645537A532BF6C28 /* Pods-Yelping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yelping/Pods-Yelping.debug.xcconfig"; sourceTree = "<group>"; };
+		E327BDB3207753FE00FA46EE /* AKSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSearchViewController.swift; sourceTree = "<group>"; };
+		E327BDBC2078336E00FA46EE /* AKBusinessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKBusinessCollectionViewCell.swift; sourceTree = "<group>"; };
+		E327BDC82078533B00FA46EE /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		E327BDCE2078B94400FA46EE /* AKAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKAPIManager.swift; sourceTree = "<group>"; };
+		E327BDCF2078B94400FA46EE /* AKDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKDataManager.swift; sourceTree = "<group>"; };
+		E327BDD22078BFE200FA46EE /* AKSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSearchViewModel.swift; sourceTree = "<group>"; };
+		E327BDDF20795CA400FA46EE /* AKBusinessCVCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKBusinessCVCConfigurator.swift; sourceTree = "<group>"; };
+		E327BDE12079A09500FA46EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E327BDE52079D4F100FA46EE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E327BDE82079D89E00FA46EE /* AKDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDataStorage.swift; sourceTree = "<group>"; };
+		E327BDEA2079FC7000FA46EE /* AKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKWebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1256B11720775196001E13B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932585B355E08D812D41CC68 /* Pods_Yelping.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1256B11120775196001E13B2 = {
+			isa = PBXGroup;
+			children = (
+				1256B11C20775196001E13B2 /* Yelping */,
+				1256B11B20775196001E13B2 /* Products */,
+				886B833BB876BE5142EA3D3E /* Pods */,
+				B45EA6D5DBB0A20157AB5E12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1256B11B20775196001E13B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1256B11A20775196001E13B2 /* Yelping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1256B11C20775196001E13B2 /* Yelping */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDB2207753EB00FA46EE /* ViewControllers */,
+				E327BDBB2078317800FA46EE /* CollectionViewCells */,
+				E327BDF7207AC9EC00FA46EE /* Configurator */,
+				E327BDF8207ACA3900FA46EE /* ViewModel */,
+				E327BDE72079D78500FA46EE /* Storage */,
+				E327BDC7207852FF00FA46EE /* Model */,
+				E327BDC420784EAC00FA46EE /* API */,
+				1256B11D20775196001E13B2 /* AppDelegate.swift */,
+				1256B12120775196001E13B2 /* Main.storyboard */,
+				1256B12720775198001E13B2 /* Assets.xcassets */,
+				1256B12920775198001E13B2 /* LaunchScreen.storyboard */,
+				1256B12C20775198001E13B2 /* Info.plist */,
+				1256B12420775196001E13B2 /* Yelping.xcdatamodeld */,
+			);
+			path = Yelping;
+			sourceTree = "<group>";
+		};
+		886B833BB876BE5142EA3D3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DABDF379645537A532BF6C28 /* Pods-Yelping.debug.xcconfig */,
+				BA486B2381161A56EF86A47E /* Pods-Yelping.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B45EA6D5DBB0A20157AB5E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2C990C55EE61F83F1E2D1B3 /* Pods_Yelping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E327BDB2207753EB00FA46EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDB3207753FE00FA46EE /* AKSearchViewController.swift */,
+				E327BDEA2079FC7000FA46EE /* AKWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E327BDBB2078317800FA46EE /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDBC2078336E00FA46EE /* AKBusinessCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E327BDC420784EAC00FA46EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDCF2078B94400FA46EE /* AKDataManager.swift */,
+				E327BDCE2078B94400FA46EE /* AKAPIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E327BDC7207852FF00FA46EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDC82078533B00FA46EE /* Business.swift */,
+				E327BDE12079A09500FA46EE /* Extensions.swift */,
+				E327BDE52079D4F100FA46EE /* Reachability.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E327BDE72079D78500FA46EE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDE82079D89E00FA46EE /* AKDataStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		E327BDF7207AC9EC00FA46EE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDDF20795CA400FA46EE /* AKBusinessCVCConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E327BDF8207ACA3900FA46EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E327BDD22078BFE200FA46EE /* AKSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1256B11920775196001E13B2 /* Yelping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1256B12F20775198001E13B2 /* Build configuration list for PBXNativeTarget "Yelping" */;
+			buildPhases = (
+				770B687353BEC58B327007E2 /* [CP] Check Pods Manifest.lock */,
+				1256B11620775196001E13B2 /* Sources */,
+				1256B11720775196001E13B2 /* Frameworks */,
+				1256B11820775196001E13B2 /* Resources */,
+				D49A1E6A359980DD444CC2AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yelping;
+			productName = Yelping;
+			productReference = 1256B11A20775196001E13B2 /* Yelping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1256B11220775196001E13B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Kakar;
+				TargetAttributes = {
+					1256B11920775196001E13B2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 1256B11520775196001E13B2 /* Build configuration list for PBXProject "Yelping" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1256B11120775196001E13B2;
+			productRefGroup = 1256B11B20775196001E13B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1256B11920775196001E13B2 /* Yelping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1256B11820775196001E13B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1256B12B20775198001E13B2 /* LaunchScreen.storyboard in Resources */,
+				1256B12820775198001E13B2 /* Assets.xcassets in Resources */,
+				1256B12320775196001E13B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		770B687353BEC58B327007E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yelping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49A1E6A359980DD444CC2AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yelping/Pods-Yelping-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yelping/Pods-Yelping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1256B11620775196001E13B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E327BDD32078BFE200FA46EE /* AKSearchViewModel.swift in Sources */,
+				E327BDE62079D4F100FA46EE /* Reachability.swift in Sources */,
+				E327BDD02078B94400FA46EE /* AKAPIManager.swift in Sources */,
+				E327BDE020795CA400FA46EE /* AKBusinessCVCConfigurator.swift in Sources */,
+				E327BDBD2078336E00FA46EE /* AKBusinessCollectionViewCell.swift in Sources */,
+				E327BDB4207753FE00FA46EE /* AKSearchViewController.swift in Sources */,
+				E327BDE92079D89E00FA46EE /* AKDataStorage.swift in Sources */,
+				E327BDE22079A09500FA46EE /* Extensions.swift in Sources */,
+				E327BDC92078533B00FA46EE /* Business.swift in Sources */,
+				1256B12620775196001E13B2 /* Yelping.xcdatamodeld in Sources */,
+				E327BDEB2079FC7000FA46EE /* AKWebViewController.swift in Sources */,
+				1256B11E20775196001E13B2 /* AppDelegate.swift in Sources */,
+				E327BDD12078B94400FA46EE /* AKDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1256B12120775196001E13B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1256B12220775196001E13B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1256B12920775198001E13B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1256B12A20775198001E13B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1256B12D20775198001E13B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1256B12E20775198001E13B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1256B13020775198001E13B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABDF379645537A532BF6C28 /* Pods-Yelping.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SRLES54L72;
+				INFOPLIST_FILE = Yelping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kakar.Yelping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1256B13120775198001E13B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA486B2381161A56EF86A47E /* Pods-Yelping.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SRLES54L72;
+				INFOPLIST_FILE = Yelping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kakar.Yelping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1256B11520775196001E13B2 /* Build configuration list for PBXProject "Yelping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1256B12D20775198001E13B2 /* Debug */,
+				1256B12E20775198001E13B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1256B12F20775198001E13B2 /* Build configuration list for PBXNativeTarget "Yelping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1256B13020775198001E13B2 /* Debug */,
+				1256B13120775198001E13B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1256B12420775196001E13B2 /* Yelping.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1256B12520775196001E13B2 /* Yelping.xcdatamodel */,
+			);
+			currentVersion = 1256B12520775196001E13B2 /* Yelping.xcdatamodel */;
+			path = Yelping.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1256B11220775196001E13B2 /* Project object */;
+}

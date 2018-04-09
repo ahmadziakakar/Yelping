@@ -1,0 +1,6 @@
+framework module Pods_Yelping {
+  umbrella header "Pods-Yelping-umbrella.h"
+
+  export *
+  module * { export * }
+}
